@@ -1,0 +1,24 @@
+{
+  "name": "circle_server",
+  "version": "1.0.0",
+  "description": "圈子服务端",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "author": "Charles",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-json-error": "^3.1.2",
+    "koa-jwt": "^4.0.0",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.0.0",
+    "mongoose": "^5.11.12",
+    "socket.io": "^3.1.0",
+    "ws": "^7.4.2"
+  }
+}
