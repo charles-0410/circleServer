@@ -1,0 +1,66 @@
+$color-white: #fff !important;
+$color-main: #fc4d50 !important;
+$color-mian-o: #fff0f1 !important;
+$color-gray: #8590a6 !important;
+$color-gray-hover: #76839b !important;
+$color-gray-text: #656973 !important;
+$color-gray-text-s: #a8abb3 !important;
+$color-gray-line: #ebebed !important;
+$color-gray-line-s: #f4f4f4 !important;
+$color-gray-bg: #f6f8fa !important;
+$color-gray-bg-hover: #f1f1f1 !important;
+$color-success: #67c23a !important;
+
+$shadow-g: 0 1px 3px rgba(26, 26, 26, 0.1);
+
+$animation: "all .3s ease-out";
+
+.clearfix {
+  &::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+}
+.div-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+}
+.shadow {
+  box-shadow: $shadow-g;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* float：透明度 + 滑动组合 */
+.float-enter {
+  opacity: 0;
+  transform: translate3d(0, 10%, 0);
+}
+.float-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 10%, 0);
+}
+.float-leave-active,
+.float-enter-active {
+  transition: $animation;
+}
+/* fade：渐隐渐显 */
+.fade-enter {
+  opacity: 0;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-leave-active,
+.fade-enter-active {
+  transition: $animation;
+}
